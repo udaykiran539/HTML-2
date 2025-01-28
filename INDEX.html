@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uday'S ChatRoom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">uday'S ChatRoom</h1>
+    <form id="chatForm" class="form">
+      <input type="text" id="username" class="input" placeholder="Your Name" required>
+      <input type="text" id="message" class="input" placeholder="Your Message" required>
+      <button type="submit" class="button">Send</button>
+    </form>
+    <div id="chatArea" class="messageArea"></div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
